@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./../dist/output.css" rel="stylesheet" />
+    <link href="./dist/output.css" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"></script>
@@ -12,19 +12,20 @@
     <title>Ambulance Sijagur Reborn</title>
   </head>
   <body class="relative">
-    <div class="navbar-mobile bg-white fixed h-screen z-[900] block sm:hidden top-0 w-3/4 right-0 transition-all transform translate-x-[475px] duration-700">
+    <div class="overlay fixed w-full h-screen bg-black hidden opacity-70 z-[800]"></div>
+    <div class="navbar-mobile bg-white shadow-xl fixed h-screen z-[900] block sm:hidden top-0 w-3/4 right-0 transition-all transform translate-x-[475px] duration-700">
       <ul class="navar-list mt-24 px-3 h-full">
         <li class="navbar-item py-2">
-          <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Tentang</a> 
+          <a href="#about" class="navbar-link text-tertiary hover:text-primary  transition-all">Tentang</a> 
         </li>
         <li class="navbar-item py-2">
-          <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Visi Misi</a> 
+          <a href="#visi-misi" class="navbar-link text-tertiary hover:text-primary  transition-all">Visi Misi</a> 
         </li>
         <li class="navbar-item py-2">
-          <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Pelayanan</a> 
+          <a href="#services" class="navbar-link text-tertiary hover:text-primary  transition-all">Pelayanan</a> 
         </li>
         <li class="navbar-item py-2">
-          <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Kontak</a>
+          <a href="#contact" class="navbar-link text-tertiary hover:text-primary  transition-all">Kontak</a>
         </li>
       </ul>
     </div>
@@ -46,16 +47,16 @@
           <div class="navbar-menu hidden sm:block">
             <ul class="navar-list inline-flex gap-10">
               <li class="navbar-item">
-                <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Tentang</a> 
+                <a href="#about" class="navbar-link text-tertiary hover:text-primary  transition-all">Tentang</a> 
               </li>
               <li class="navbar-item">
-                <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Visi Misi</a> 
+                <a href="#visi-misi" class="navbar-link text-tertiary hover:text-primary  transition-all">Visi Misi</a> 
               </li>
               <li class="navbar-item">
-                <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Pelayanan</a> 
+                <a href="#services" class="navbar-link text-tertiary hover:text-primary  transition-all">Pelayanan</a> 
               </li>
               <li class="navbar-item">
-                <a href="#" class="navbar-link text-tertiary hover:text-primary  transition-all">Kontak</a>
+                <a href="#contact" class="navbar-link text-tertiary hover:text-primary  transition-all">Kontak</a>
               </li>
             </ul>
           </div>
@@ -70,7 +71,7 @@
             <h1 class="text-4xl text-center sm:text-left sm:text-6xl w-full sm:w-[585px] font-semibold mb-5 leading-tight text-white">Ambulance Sijagur Reborn  Kota Bandung</h1>
             <p class="text-center sm:text-left mb-5 text-slate-300">Penyelamatan darurat dengan ambulans terpercaya. Perawatan ahli. Keamanan dan tanggap cepat. Hubungi kami sekarang!</p>
             <div class="banner-cotent-button flex">
-              <a href="" class="inline-block m-auto sm:m-0 text-center sm:text-left py-3 text-white px-10 bg-primary rounded-full hover:opacity-90 transition-all">Hubungi Kami</a>
+              <a href="https://wa.link/7k3rap" target="_blank" class="inline-block m-auto sm:m-0 text-center sm:text-left py-3 text-white px-10 bg-primary rounded-full hover:opacity-90 transition-all">Hubungi Kami</a>
             </div>
           </div>
         </div>
@@ -92,7 +93,7 @@
         </div>
       </div>
     </section>
-    <section class="visi py-16 bg-white bg-opacity-25" id="visi">
+    <section class="visi py-16 bg-white bg-opacity-25" id="visi-misi">
       <div class="container mx-auto px-3">
         <div class="visi-content grid grid-cols-1 sm:grid-cols-2 gap-20 items-center">
           <div class="visi-content-img order-2 sm:order-1">
@@ -151,7 +152,7 @@
       </div> 
     </section>
 
-    <section class="contact py-16">
+    <section class="contact py-16" id="contact">
       <div class="container mx-auto px-3">
         <div class="contact-content grid grid-cols-1 sm:grid-cols-2 gap-10">
           <div class="contact-content-text">
@@ -159,19 +160,24 @@
             <div class="contact-content-box flex items-center gap-3 mb-8">
               <i class="fa-solid fa-location-dot text-4xl"></i>
               <div class="ml-2">
-                <a href="#" class="text-xl">253 Destin Light Suite 931 </a>
+                <a href="#" class="text-xl">253 Jl Moch Toha (Gg.Denki 2 no.378/203a) RT01 RW08 Kecamatan Regol Kelurahan Cigereleng Kota Bandung </a>
               </div> 
             </div>
             <div class="contact-content-box flex items-center gap-3 mb-8">
               <i class="fa-solid fa-phone text-3xl"></i>
               <div class="ml-2">
-                <a href="#" class="text-xl">085770025143</a>
+                <a href="https://wa.link/vsl437" target="_blank" class="text-xl block">
+                  <span>0895622060758 (Joy)</span>
+                </a>
+                <a href="https://wa.link/vsl437" target="_blank" class="text-xl">
+                  <span>0895622060758 (Raka)</span>
+                </a>
               </div> 
             </div>
             <div class="contact-content-box flex items-center gap-3">
               <i class="fa-solid fa-envelope text-3xl"></i>
               <div class="ml-2">
-                <a href="#" class="text-xl">ambulance_sijagur@gmail.com</a>
+                <a href="mailto:rakarandiansyah1407@gmail.com" class="text-xl">rakarandiansyah1407@gmail.com</a>
               </div> 
             </div>
           </div>
