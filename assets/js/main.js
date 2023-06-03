@@ -1,6 +1,7 @@
 $(document).ready(function(){
     $('.navbar-toggle').click(function(e){
         $('.navbar-mobile').toggleClass('translate-x-[475px]')
+        $('.overlay').toggleClass('opacity-0 opacity-70')
         $(this).find('span:nth-child(1)').toggleClass('-translate-y-2.5 rotate-45')
         $(this).find('span:nth-child(2)').toggleClass('opacity-0')
         $(this).find('span:nth-child(3)').toggleClass('translate-y-2.5 -rotate-45')
