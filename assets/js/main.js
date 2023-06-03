@@ -15,6 +15,7 @@ $(document).ready(function(){
     $(document).click(function() {
         $('.navbar-mobile').addClass('translate-x-[475px]')
         $(this).find('span:nth-child(1)').addClass('-translate-y-2.5').removeClass('rotate-45')
+        $('.overlay').addClass('opacity-0').removeClass('opacity-70')
         $(this).find('span:nth-child(2)').removeClass('opacity-0')
         $(this).find('span:nth-child(3)').addClass('translate-y-2.5').removeClass('-rotate-45') 
     });
@@ -24,6 +25,7 @@ $(document).ready(function(){
             $('.navbar-mobile').addClass('translate-x-[475px]')
             $('.navbar-toggle').find('span:nth-child(1)').addClass('-translate-y-2.5').removeClass('rotate-45')
             $('.navbar-toggle').find('span:nth-child(2)').removeClass('opacity-0')
+            $('.overlay').addClass('opacity-0 ').removeClass('opacity-70')
             $('.navbar-toggle').find('span:nth-child(3)').addClass('translate-y-2.5').removeClass('-rotate-45') 
         })
     })
